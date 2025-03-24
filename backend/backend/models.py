@@ -18,7 +18,7 @@ DELETED_AT_FIELD = models.DateTimeField(null=True, blank=True)
 
 
 
-class PointOfIntrest(models.Model):
+class PointOfInterest(models.Model):
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 

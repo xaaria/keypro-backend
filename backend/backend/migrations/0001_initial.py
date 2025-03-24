@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='PointOfIntrest',
+            name='PointOfInterest',
             fields=[
                 ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
                 ('location_lat', models.DecimalField(db_index=True, decimal_places=15, help_text='Coordinates lat.', max_digits=17, validators=[django.core.validators.MinValueValidator(-90), django.core.validators.MaxValueValidator(90)])),
