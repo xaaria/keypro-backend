@@ -53,9 +53,9 @@ class PointOfInterest(models.Model):
     created_by = models.ForeignKey(UserModel, on_delete=models.RESTRICT)
 
     # Timestamp fields
-    CREATED_AT_FIELD
-    UPDATED_AT_FIELD
-    DELETED_AT_FIELD # Soft delete
+    created_at  = CREATED_AT_FIELD
+    updated_at  = UPDATED_AT_FIELD
+    deleted_at  = DELETED_AT_FIELD # Soft delete
 
     def __str__(self):
         return str.format("<{} [{}, {}]>", self.id, self.location_lat, self.location_long)
