@@ -7,7 +7,7 @@ router = DefaultRouter()
 
 urlpatterns = [
     path('pois', views.POIViewSet.as_view(), name='pois'),
-    path('pois/<pk>', views.POIGetSingleViewSet.as_view(), name='pois'),
+    path('pois/<pk>', views.POISingleViewSet.as_view(), name='pois-single'),
     path("hello", views.hello, name="hello"),
     path('token', obtain_auth_token),
     path('', include(router.urls)),
